@@ -1,12 +1,12 @@
-import { buildServer, AppOptions } from './server'
+import { buildServer, AppOptions } from './app/server'
+import { logger } from './app/logger'
 
 const options: AppOptions = {
-    logger: true,
+    logger
 }
 
 const start = async () => {
     const app = await buildServer(options)
-
     try {
         await app.listen({ port: 3000, host: 'localhost' })
 
