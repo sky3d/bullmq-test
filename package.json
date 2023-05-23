@@ -1,0 +1,24 @@
+{
+  "name": "bullmq-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "npx ts-node src/index.ts",
+    "env:up": "docker-compose up",
+    "env:down": "docker-compose down"
+  },
+  "keywords": [],
+  "author": "sky3d",
+  "license": "ISC",
+  "dependencies": {
+    "bullmq": "^3.14.0",
+    "fastify": "^4.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  }
+}
